@@ -1,0 +1,271 @@
+body, html {
+    height: 100%;
+    background-image:url(bg.png);
+    font-family: 'Lobster';
+}
+
+body {
+    margin: 0px;
+}
+
+
+
+/* For the different information divs*/
+.ny1 {
+    width: 100%;
+    background: url(resources/images/img1.jpg) fixed repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-size: 100%;
+    min-height: 80%;
+    overflow: hidden;            
+}
+
+.ny2, .ny3, .ny4 {
+    margin-top: 20px;
+}
+
+.ny2 {
+    background: url(resources/images/img3.jpg) ;
+    background-attachment: fixed; 
+    background-size: cover;
+    width: 100%;
+    background-size: 100%;
+    min-height: 80%;
+    overflow: hidden;
+    text-align:center;
+}
+
+.ny3 {
+    background: url(/resources/images/img2.jpg);
+    width: 100%;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-size: 100%;
+    min-height: 80%;
+    overflow: hidden;
+    text-align:center;
+}
+
+.ny4 {
+    background: url(resources/images/img5.jpg);
+  
+    width: 100%;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-size: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    text-align:center;
+}
+
+.ny5 {
+    color: #AB3C3C;
+    padding:1%;
+    text-align:center;
+}
+
+.ny6 {
+    color: black;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    height: 25%;
+    float:left;
+}
+
+/* For the paragraphs */
+.p1{
+    background-color: white; 
+    width: 40%;
+    margin-top:auto; 
+    margin-bottom:auto;
+    opacity:0.7; 
+    font-weight:normal; 
+    float:right; 
+    margin:5%; 
+    padding:2%; 
+    text-align:center;
+    color: #AB3C3C;
+}
+
+
+
+/* For the Navigation Bar*/
+.ribbon {
+    display: inline-block;
+    font-size:large;
+    margin-left: 500px
+
+    }
+
+.ribbon:after, .ribbon:before {
+
+    content: "";
+    margin-bottom: 0.5em;
+    float: left;
+    border: 1.5em solid #CB4E4E;
+    }
+
+.ribbon:after {
+    border-right-color: transparent;
+    }
+
+.ribbon:before {
+    border-left-color: transparent;
+    }
+
+.ribbon a:link, .ribbon a:visited {
+    color: white;
+    text-decoration: none;
+    float: left;
+    height: 3.5em;
+    overflow: hidden;
+    }
+
+.ribbon span {
+    background: #F06060;
+    display: inline-block;
+    line-height: 3em;
+    padding:0 1em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s; /* Saf3.2+, Chrome */
+    -moz-transition: background-color 0.2s, margin-top 0.2s; /* FF4+ */
+    -ms-transition: background-color 0.2s, margin-top 0.2s; /* IE10 */
+    -o-transition: background-color 0.2s, margin-top 0.2s; /* Opera 10.5+ */
+    transition: background-color 0.2s, margin-top 0.2s;
+    }
+
+.ribbon a:hover span {
+    background: #FA987D;
+    margin-top: 0;
+    color: #CB4E4E;
+    }
+
+.ribbon span:before {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid #AB3C3C;
+    border-bottom: 0.5em solid #F06060;
+    }
+
+.ribbon span:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #AB3C3C;
+    border-bottom: 0.5em solid #F06060;
+    }
+
+.ribbon .span-left:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    left: 0;
+    border-right: 0.5em solid transparent;
+    border-bottom: 0.5em solid #F06060;
+    }
+
+.ribbon .span-right:after {
+    content: "";
+    position: absolute;
+    top: 3em;
+    right: 0;
+    border-left: 0.5em solid #AB3C3C;
+    border-bottom: 0.5em solid transparent;
+    }
+
+/* For the smooth scroll part*/
+.scroll {
+    width: 100%;
+    height: 10px;
+    position: fixed;
+}
+
+.forUpScroll {
+    min-height: 40px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 1%;
+    cursor: pointer;
+    width:50%;
+}
+
+.forDwnScroll {
+    min-height: 40px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 1.5%;
+    cursor: pointer;
+    width: 47%;
+}
+
+img {
+    width: 7%;
+    height: 7%;
+}
+
+.down{
+    float:right;
+}
+
+/* For the Footer*/
+.footer{
+    color: #F06060;
+    font-family: 'Dancing Script';
+    font-size: xx-large;
+}
+
+/* Banner */
+.banner{
+    float:left; 
+    font-size:40px; 
+    color:#F06060; 
+    padding-left:30px; 
+    padding-top:30px; 
+    width:20%
+}
+
+.highlight{
+    color:black;
+}
+
+/* Media Queries */
+@media screen and (max-width:800px) {
+    .ny6 {
+        height: auto;
+    }        
+}
+
+@media screen and (max-width:500px) {
+    .ny1, .ny2, .ny3 , .ny4 {
+        background-size: 300%;
+    }
+
+    .p1, .p2, .p3, .p4{
+        width:80%;
+    }
+
+    .ny6{
+        height:auto;
+    }
+
+    .ribbon {
+        font-size: small;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .ribbon:before{
+        content:inherit;
+    }
+
+    img {
+        width: 15%;
+        height: 15%;
+    }
+}

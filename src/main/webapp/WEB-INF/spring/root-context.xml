@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+
+	<bean id="userDao" class="com.hotel.myapp.Dao.UserDao" ></bean>
+	<bean id="bookingDao" class="com.hotel.myapp.Dao.BookingDao" ></bean>
+	<bean id="hotelDao" class="com.hotel.myapp.Dao.HotelDao" ></bean>
+	<bean id="transactionDao" class="com.hotel.myapp.Dao.TransactionDao" ></bean>
+	<bean id="reviewDao" class="com.hotel.myapp.Dao.ReviewDao" ></bean>
+	<bean id="ratingDao" class="com.hotel.myapp.Dao.RatingDao" ></bean>
+</beans>
